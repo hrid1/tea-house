@@ -11,8 +11,32 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font setup -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .font-manrope {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
+    <!-- custom tailwind -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
   </head>
-  <body>
+  <body class="font-manrope">
     <header class="container mx-auto px-14">
       <!-- navbar -->
       <nav>
@@ -190,10 +214,143 @@
         </div>
       </section>
 
+      <!-- Greate Tea section -->
+      <section class="flex flex-col md:flex-row gap-10 justify-center my-20">
+        <div class="grid grid-cols-2 gap-5 place-items-center">
+          <div
+            class="w-60 h-32 rounded-xl opacity-10 bg-gradient-to-r from-[#FF0000] to-[#FF8938]"
+          ></div>
+          <div class="row-span-2 bg-orange-100 p-4 rounded-xl">
+            <img src="./images/fresh-1.png" alt="" />
+          </div>
+          <div class="row-span-2 bg-green-100 py-4 px-8 rounded-xl">
+            <img src="./images/fresh-2.png" alt="" />
+          </div>
+          <div
+            class="w-60 h-32 rounded-xl opacity-10 bg-gradient-to-r from-[#626060] to-[#dcdada]"
+          ></div>
+        </div>
+        <!-- info -->
+        <div class="md:w-1/2 space-y-8">
+          <h2 class="text-5xl font-extrabold">
+            Greate Tea, Freashly <br />Presented
+          </h2>
+          <p>
+            The meaning of gong cha is chanese is to provide the best tea to
+            emperor from all possessions . It represents the highest quality and
+            self expectation. Establishing in 2006, Gong cha had been deeply
+            appreciated by its custoers because of good words of mouth and
+            unique customized service orginated from Taiwan.
+          </p>
+          <div class="spacey">
+            <h4 class="text-xl font-extrabold">Unique Taste</h4>
+            <p>
+              Premium Quality that makes tea more elegant and more durable when
+              you use it.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="text-xl font-extrabold">Premium Quality</h4>
+            <p>
+              Premium Quality that makes tea more elegant and more durable when
+              you use it.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Meet_Client_Section -->
+      <section
+        class="container mx-auto rounded-lg bg-gradient-to- flex flex-col md:flex-row gap-10 items-center my-20 p-16 bg-gradient-to-r from-[#FF8938] to-[#FF0000]"
+      >
+        <div class="md:w-1/2 space-y-8 ">
+          <h2 class="font-extrabold text-5xl text-white">
+            Meet Our Super Clients
+          </h2>
+          <p class="text-white">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour, or randomised words which don't look even slightly
+            believable.
+          </p>
+          <button class="btn text-[#FF0000] rounded-md">Show All</button>
+        </div>
+
+        <div  class="md:w-1/2 ml-12 p-2">
+          <!-- previous reviw -->
+          <div class="relative opacity-50 z-0 mb-10">
+            <div
+              class="custom-card w-11/12 border bg-white py-8 px-10 rounded-lg space-y-4"
+            >
+              <p>
+                We are providing the best and suitable home insurance services
+                for the people who are interested to treatment
+              </p>
+
+              <div>
+                <p class="font-semibold">Ilham Yuda</p>
+                <p class="text-gray-500">Businessman</p>
+              </div>
+              <div class="flex justify-end">
+                <img src="./images/circles.png" alt="" />
+              </div>
+            </div>
+            <div class="absolute rounded-full border-4 -top-5 -left-5 bg-white">
+              <img src="./images/client.png" alt="" />
+            </div>
+          </div>
+          <!-- current review -->
+          <div class="absolute -mt-36 -ml-20 z-10 w-1/2 md:w-1/3">
+            <div
+              class="custom-card w-11/12 border bg-white py-8 px-10 rounded-lg space-y-4"
+            >
+              <p>
+                We are providing the best and suitable home insurance services
+                for the people who are interested to treatment
+              </p>
+
+              <div>
+                <p class="font-semibold">Ilham Yuda</p>
+                <p class="text-gray-500">Businessman</p>
+              </div>
+              <div class="flex justify-end">
+                <img src="./images/circles.png" alt="" />
+              </div>
+            </div>
+            <div class="absolute rounded-full border-4 -top-5 -left-5 bg-white">
+              <img src="./images/client.png" alt="" />
+            </div>
+          </div>
+          <!-- next review -->
+          <div class="relative opacity-50">
+            <div
+              class="custom-card w-11/12 border bg-white py-8 px-10 rounded-lg space-y-4"
+            >
+              <p>
+                We are providing the best and suitable home insurance services
+                for the people who are interested to treatment
+              </p>
+
+              <div>
+                <p class="font-semibold">Ilham Yuda</p>
+                <p class="text-gray-500">Businessman</p>
+              </div>
+              <div class="flex justify-end">
+                <img src="./images/circles.png" alt="" />
+              </div>
+            </div>
+            <div class="absolute rounded-full border-4 -top-5 -left-5 bg-white">
+              <img src="./images/client.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- News section -->
       <div class="text-center space-y-6 my-12">
         <h2 class="font-extrabold text-5xl">News & Events</h2>
-        <p class="w-4/5 mx-auto">
+        <p class="md:w-4/5 mx-auto">
           There are many variations of passages of Lorem Ipsum available, but
           the majority have suffered alteration in some form, by injected
           humour, or randomised words which don't look even slightly believable.
@@ -263,7 +420,7 @@
     <!-- footer section -->
 
     <footer class="bg-base-200 p-12">
-      <div class="footer bg-base-200  items-center px-6">
+      <div class="footer bg-base-200 items-center px-6">
         <aside class="grid-flow-col items-center">
           <svg
             width="36"
@@ -278,15 +435,14 @@
               d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z"
             ></path>
           </svg>
-          
         </aside>
         <nav
           class="grid-flow-col gap-4 md:place-self-center md:justify-self-end"
         >
-       <div class="flex flex-col md:flex-row items-center gap-4 ">
-        <h2 class="text-2xl font-semibold">Ready To Get Started?</h2>
-        <button class="btn bg-red-500 text-white">Get Started</button>
-       </div>
+          <div class="flex flex-col md:flex-row items-center gap-4">
+            <h2 class="text-2xl font-semibold">Ready To Get Started?</h2>
+            <button class="btn bg-red-500 text-white">Get Started</button>
+          </div>
         </nav>
       </div>
 
